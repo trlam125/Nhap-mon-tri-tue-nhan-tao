@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     haberman-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1,2
+Instances:    306
+Attributes:   2
+              nodes
+              survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: 1 (306.0/81.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         223               72.8758 %
+Incorrectly Classified Instances        83               27.1242 %
+Kappa statistic                         -0.0014
+Mean absolute error                      0.3857
+Root mean squared error                  0.4433
+Relative absolute error                 98.8827 %
+Root relative squared error            100.4855 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,987    0,988    0,735      0,987    0,843      -0,004   0,521     0,747     1
+                 0,012    0,013    0,250      0,012    0,024      -0,004   0,521     0,276     2
+Weighted Avg.    0,729    0,730    0,607      0,729    0,626      -0,004   0,521     0,622     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 222   3 |   a = 1
+  80   1 |   b = 2
+

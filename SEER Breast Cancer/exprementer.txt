@@ -1,0 +1,21 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 0 -stddev-width 0 -sig-width 0 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   1
+Resultsets: 3
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       20:59, 30/04/2026
+
+
+Dataset                   (1) bayes.Na | (2) lazy. (3) trees
+------------------------------------------------------------
+SEER_Breast_Cancer_Weka_f(100)   84.58 |   84.06     89.78 v
+------------------------------------------------------------
+                               (v/ /*) |   (0/1/0)   (1/0/0)
+
+
+Key:
+(1) bayes.NaiveBayes '' 5995231201785697655
+(2) lazy.IBk '-K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+(3) trees.J48 '-C 0.25 -M 2' -217733168393644444
+

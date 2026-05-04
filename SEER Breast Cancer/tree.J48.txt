@@ -1,0 +1,98 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     SEER_Breast_Cancer_Weka_fixed-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    4024
+Attributes:   15
+              Age
+              Race
+              Marital_Status
+              T_Stage
+              N_Stage
+              6th_Stage
+              Grade
+              A_Stage
+              Tumor_Size
+              Estrogen_Status
+              Progesterone_Status
+              Regional_Node_Examined
+              Regional_Node_Positive
+              Survival_Months
+              Status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Survival_Months = '(-inf-11.6]'
+|   Progesterone_Status = Positive
+|   |   Age = '(-inf-33.9]': Alive (1.0)
+|   |   Age = '(33.9-37.8]': Dead (0.0)
+|   |   Age = '(37.8-41.7]': Alive (3.0)
+|   |   Age = '(41.7-45.6]': Alive (4.0)
+|   |   Age = '(45.6-49.5]': Alive (6.0/1.0)
+|   |   Age = '(49.5-53.4]': Alive (6.0/3.0)
+|   |   Age = '(53.4-57.3]': Alive (3.0/1.0)
+|   |   Age = '(57.3-61.2]': Dead (6.0/2.0)
+|   |   Age = '(61.2-65.1]': Dead (7.0)
+|   |   Age = '(65.1-inf)': Dead (7.0)
+|   Progesterone_Status = Negative: Dead (22.0/1.0)
+Survival_Months = '(11.6-22.2]': Dead (92.0/22.0)
+Survival_Months = '(22.2-32.8]': Dead (103.0/18.0)
+Survival_Months = '(32.8-43.4]': Dead (141.0/40.0)
+Survival_Months = '(43.4-54]'
+|   Progesterone_Status = Positive
+|   |   Regional_Node_Positive = '(-inf-5.5]': Alive (343.0/50.0)
+|   |   Regional_Node_Positive = '(5.5-10]': Alive (48.0/12.0)
+|   |   Regional_Node_Positive = '(10-14.5]': Alive (12.0/2.0)
+|   |   Regional_Node_Positive = '(14.5-19]': Dead (8.0/1.0)
+|   |   Regional_Node_Positive = '(19-23.5]': Dead (3.0/1.0)
+|   |   Regional_Node_Positive = '(23.5-28]': Alive (4.0/2.0)
+|   |   Regional_Node_Positive = '(28-32.5]': Dead (1.0)
+|   |   Regional_Node_Positive = '(32.5-37]': Alive (0.0)
+|   |   Regional_Node_Positive = '(37-41.5]': Alive (0.0)
+|   |   Regional_Node_Positive = '(41.5-inf)': Alive (0.0)
+|   Progesterone_Status = Negative
+|   |   N_Stage = N3: Dead (18.0/4.0)
+|   |   N_Stage = N2: Dead (14.0/5.0)
+|   |   N_Stage = N1: Alive (40.0/12.0)
+Survival_Months = '(54-64.6]': Alive (621.0/73.0)
+Survival_Months = '(64.6-75.2]': Alive (654.0/46.0)
+Survival_Months = '(75.2-85.8]': Alive (607.0/43.0)
+Survival_Months = '(85.8-96.4]': Alive (622.0/32.0)
+Survival_Months = '(96.4-inf)': Alive (628.0/11.0)
+
+Number of Leaves  : 	32
+
+Size of the tree : 	38
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3601               89.4881 %
+Incorrectly Classified Instances       423               10.5119 %
+Kappa statistic                          0.5165
+Mean absolute error                      0.1675
+Root mean squared error                  0.2976
+Relative absolute error                 64.5483 %
+Root relative squared error             82.6618 %
+Total Number of Instances             4024     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,974    0,541    0,909      0,974    0,940      0,538    0,802     0,936     Alive
+                 0,459    0,026    0,759      0,459    0,572      0,538    0,802     0,575     Dead
+Weighted Avg.    0,895    0,462    0,886      0,895    0,884      0,538    0,802     0,881     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3318   90 |    a = Alive
+  333  283 |    b = Dead
+

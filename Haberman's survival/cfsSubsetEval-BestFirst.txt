@@ -1,0 +1,32 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     haberman-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    306
+Attributes:   4
+              ï»¿age
+              year
+              nodes
+              survival_status
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 6
+	Merit of best subset found:    0.076
+
+Attribute Subset Evaluator (supervised, Class (nominal): 4 survival_status):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 3 : 1
+                     nodes
+

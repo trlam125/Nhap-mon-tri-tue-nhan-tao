@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     SEER_Breast_Cancer_Weka_fixed-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    4024
+Attributes:   15
+              Age
+              Race
+              Marital_Status
+              T_Stage
+              N_Stage
+              6th_Stage
+              Grade
+              A_Stage
+              Tumor_Size
+              Estrogen_Status
+              Progesterone_Status
+              Regional_Node_Examined
+              Regional_Node_Positive
+              Survival_Months
+              Status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3378               83.9463 %
+Incorrectly Classified Instances       646               16.0537 %
+Kappa statistic                          0.1888
+Mean absolute error                      0.1937
+Root mean squared error                  0.3847
+Relative absolute error                 74.6564 %
+Root relative squared error            106.8427 %
+Total Number of Instances             4024     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,957    0,813    0,867      0,957    0,910      0,211    0,678     0,908     Alive
+                 0,187    0,043    0,442      0,187    0,263      0,211    0,678     0,299     Dead
+Weighted Avg.    0,839    0,695    0,802      0,839    0,811      0,211    0,678     0,815     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3263  145 |    a = Alive
+  501  115 |    b = Dead
+
